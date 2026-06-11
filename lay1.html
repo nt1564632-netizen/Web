@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border:dotted;
+            flex:1;
+        }
+        .header{
+            height:80px;
+            background-color:lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            height:80px;
+            background-color:lightgrey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 400px;
+            display: flex;
+            text-align: center;
+        }
+        .left,.right{
+            background-color: darkgrey;
+            width: 25%; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+        }
+        .center{
+            width: 50%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        }
+        .prebody,.postbody{
+            height: 100px;
+            background-color:bisque;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        .body{
+            height: 200px;
+            background-color: lightgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       Header
+    </div>
+
+    <div class="container">
+        <div class="left">
+            left
+        </div>
+        <div class="center">
+            <div class="prebody">
+                Prebody
+            </div>
+            <div class="body">
+                Body
+            </div>
+            <div class="postbody">
+                Postbody
+            </div>
+        </div>
+
+        <div class="right">
+            right
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Footer
+    </div>
+</body>
+</html>
