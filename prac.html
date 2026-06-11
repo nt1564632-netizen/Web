@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .I1{
+            height: 100px;
+            width: 100px;
+            background-color: bisque;
+            justify-content: center;
+            align-items: center;
+        }
+        .I1:hover{
+            background-color: aqua;
+        }
+        button{
+            display: flex;
+            align-items: right;
+            justify-content: right;
+        }
+        button:hover{
+            background-color: black;
+        }
+        li{
+            color: yellowgreen;
+        }
+        li:first-child{
+            color:green;
+        }
+        li:last-child{
+            color: red;
+        }
+        .I2{
+            display: flex;
+            flex-direction: row;
+            margin: 30px;
+            gap: 20px;
+        }
+        input{
+            border: 2px solid gray;
+        }
+        input:focus{
+            border: 20px double red;
+            outline: none;
+        }
+        h1::before{
+            content: "H";
+            color:rgb(122, 12, 224);
+        }
+        h1::after{
+            content: "#";
+            color:aquamarine;
+        }
+        h1::first-letter{
+            font-size: 70px;
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="I1" >
+        <button>Click</button>
+
+    </div>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Address</li>
+    </ul>
+
+    <div class="I2">
+        <div><button>Click</button></div>
+        <div><input type="text" placeholder="Enter message" ></div>
+    </div>
+
+    <h1> This is Heading</h1>
+</body>
+</html>
